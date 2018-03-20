@@ -273,8 +273,10 @@ button{
     border-radius: 100%;
     background: url(../images/profile_photo.jpg) no-repeat 90%;
 }
-.main #section2 .profile .info .text{}
-.main #section2 .profile .info .text p{letter-spacing: .1em;}
+.main #section2 .profile .info .text {}
+.main #section2 .profile .info .text h4 {margin-bottom: 40px; font-size: 24px;}
+.main #section2 .profile .info .text h5 {cursor: pointer; color: #fae100;}
+.main #section2 .profile .info .text h5:hover {color: darkturquoise;}
 
 .main #section2 .skills{
     float: right;
@@ -312,6 +314,7 @@ button{
     padding-left: 92px; 
     padding-bottom: 14px; 
     font-size: 24px;
+    color: #604d8d;
 }
 .main #section2 .skills 
 .education ul li h4 small{
