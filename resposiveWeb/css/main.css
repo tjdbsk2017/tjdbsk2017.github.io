@@ -1,0 +1,384 @@
+@charset "utf-8";
+
+/* main */
+
+/* ========section01======== */
+#section01 {
+    background-color: antiquewhite;
+    height: 538px;
+}
+
+/* ---slide--- */
+#slide h2 {
+    font-family: 'Roboto',sans-serif;
+    font-size: 5em;
+    font-weight: 700;
+    
+}
+#slide .p1 {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 0 0 34px;
+}
+#slide .p2 {
+    font-size: 1.6em;
+    font-weight: 100;
+    letter-spacing: .3em;
+    line-height: 54px;
+    background: url(../images/b_canada1_03.png) no-repeat;
+    width: 473px;
+    height: 72px;
+    display: inline-block;
+}
+
+/* slide1 */
+.slide1 {
+    position: relative;
+    background-image: linear-gradient(-90deg, #adadad, #fff);
+    background-color: #dddddd;
+}
+.slide1 .slide1_inner {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.slide1 .bg {
+    height: 538px;
+    background: url(../images/bg_canada1_03.png) no-repeat right;
+}
+.slide1 .txt {
+    position: absolute;
+    left: 0; top: 50%;
+    margin-top: 125px;
+}
+
+/* slide2 */
+.slide2 {
+    background-image: linear-gradient(-90deg, #1c3b7d, #133988, #fff);
+    background-color: #23468e;
+}
+.slide2 .bg {
+    background: url(../images/bg_canada2_03.png) no-repeat right;
+}
+#slide .slide2 .p2 {
+    width: 271px;
+    text-align: center;
+    background: url(../images/b_canada2_03.png) no-repeat;
+}
+
+/* slide3 */
+.slide3 {
+    background-image: linear-gradient(-90deg, #e6c7c1, #e8c0b8, #fff);
+    background-color: #ffcbe7;
+}
+.slide3 .bg {
+    background: url(../images/bg_phliippines_03.png) no-repeat right;
+}
+#slide .slide3 .p2 {
+    width: 390px;
+    letter-spacing: .25em;
+    background: url(../images/b_philippines_03.png) no-repeat;
+}
+
+/* -----------------
+   슬라이드 버튼 커스텀
+   ----------------- */
+#slide .slick-prev {
+    position: absolute;
+    left: 8px;
+    top: 240px;
+    z-index: 100;
+    background: url(../images/b_arrow_03.png) no-repeat;
+    width: 150px;
+    height: 27px;
+    text-indent: -9999px;
+}
+#slide .slick-next {
+    background: none;
+    text-indent: -9999px;
+    visibility: hidden;
+}
+#slide .slick-dots {
+    position: absolute;
+    left: 0;
+    top: 480px;
+    width: 100%;
+    text-align: center;
+}
+#slide .slick-dots li {
+    display: inline-block;
+    margin-left: 38px;
+    
+}
+#slide .slick-dots li:first-child {
+    margin-left: 0;
+}
+#slide .slick-dots li button {
+    width: 16px;
+    height: 16px;
+    border-radius: 100px;
+    text-indent: -9999px;
+    outline: none;
+    background: #fff;
+}
+#slide .slick-dots li.slick-active button {
+    width: 22px;
+    height: 22px;
+    border: 3px solid #fff;
+    background: none;
+}
+
+/* ---신청가능한 프로그램--- */
+#line{
+    height: 151px;
+}
+#line .line_inner {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+#line h3 {
+    text-align: center;
+    background: url(../images/deco2_03.png) no-repeat center 57%;
+    font-size: 1.3em;
+    line-height: 151px;
+}
+#line h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 75px;
+    width: 573px;
+    height: 1px;
+    background-color: #000;
+}
+#line h3::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 75px;
+    width: 573px;
+    height: 1px;
+    background-color: #000;
+}
+#line .left {
+    position: absolute;
+    left: 41%;
+    top: 50%;
+    margin-top: -6px;
+    border: 1px solid #000;
+    border-radius: 100px;
+    width: 12px;
+    height: 12px;
+}
+#line .right {
+    position: absolute;
+    right: 41%;
+    top: 50%;
+    margin-top: -6px;
+    border: 1px solid #000;
+    border-radius: 100px;
+    width: 12px;
+    height: 12px;
+}
+
+
+/* ========section02======== */
+#section02 {
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+/* =====product===== */
+#product {
+    background-color: blanchedalmond;
+    width: 1400px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+#product .box {
+    width: 700px;
+    height: 700px;
+    color: #fff;
+    font-weight: 100;
+    font-style: italic;
+    position: relative;
+    text-align: center;
+}
+#product .box .box_inner {
+    max-width: 100%;
+    margin: 0 auto;
+}
+#product .box .txt {
+    display: inline-block;
+}
+
+/* ---box1--- */
+#product .box1 {
+    background: url(../images/box1_pc_03.jpg) no-repeat;
+    background-color: #1000a8;
+}
+
+/* 아이콘 */
+#product .box1 .icon {
+    background: url(../images/icon1_03.png) no-repeat;
+    position: absolute;
+    top: 152px;
+    left: 50%;
+    margin-left: -37px;
+    width: 63px;
+    height: 117px;
+}
+#product .box1:hover .icon {
+    background-position-x: right;
+}
+
+/* 텍스트 */
+#product .box1 .txt {
+    margin: 321px 0px 0 0;
+    text-align: right;
+}
+#product .box1 .txt a {
+    color: #fff;
+}
+#product .box1:hover a {
+    color: #1000a8;
+    font-weight: bold;
+}
+#product .box1 .txt h4 {
+    font-size: 1.38em;
+}
+#product .box1 .txt h4 img {
+    vertical-align: bottom;
+}
+#product .box1 .txt p{
+    font-size: 1.13em;
+}
+#product .box1 .txt em {
+    font-size: 1.4em;
+}
+
+/* ---box2--- */
+#product .box2 {
+    background: url(../images/box2_pc_03.jpg) no-repeat;
+    background-color: #42b0e2;
+}
+
+/* 텍스트 */
+#product .box2 .txt {
+    width: 100%;
+}
+#product .box2 .txt p {
+    margin: 43px 0 105px 57px;
+    text-align: left;
+}
+#product .box2 h4 {
+    text-indent: -9999px;
+    background: url(../images/box2_text_03.png) no-repeat center;
+    height: 52px;
+}
+#product .box2:hover h4 {
+    background: url(../images/box2_text2_03.png) no-repeat center;
+}
+
+/* 아이콘 */
+#product .box2 .txt .icon {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    background: url(../images/icon3_03.png) no-repeat center;
+    height: 34px;
+}
+
+/* 자세히보기 */
+#product .box2 a {
+    width: 210px;
+    height: 45px;
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    font-size: 1.3em;
+    letter-spacing: .3em;
+    font-weight: 400;
+    background-color: rgba(255,255,255,0.5);
+}
+
+/* ---box3--- */
+#product .box3 {
+    background: url(../images/box3_pc_03.jpg) no-repeat;
+    background-color: #00e481;
+}
+
+/* 텍스트 */
+#product .box3 .txt {
+    float: right;
+    margin: 37px 47px 0 0;
+    text-align: right;
+}
+#product .box3 .txt p {
+    font-size: 1.2em;
+}
+#product .box3 .txt h4 {
+    background: url(../images/box3_text_03.png) no-repeat;
+    width: 338px;
+    height: 32px;
+    margin: 34px 0 98px 0;
+    text-indent: -9999px;
+}
+
+/* 자세히보기 */
+#product .box3 a {
+    display: inline-block;
+    width: 210px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    font-size: 1.3em;
+    letter-spacing: .3em;
+    font-weight: 400;
+    background-color: rgba(255,255,255,0.5);
+}
+
+/* 아이콘 */
+#product .box3 .icon {
+    position: absolute;
+    right: 131px;
+    top: 190px;
+    background: url(../images/icon4_03.png) no-repeat;
+    width: 39px;
+    height: 34px;
+}
+
+/* ---box4--- */
+#product .box4 {
+    background-color: #fae100;
+}
+
+#product .box4 .txt{
+    padding-top: 90px;
+    text-align: center;
+    font-weight: 700;
+}
+#product .box4 .txt .icon {
+    display: inline-block;
+    margin-bottom: 92px;
+    background: url(../images/icon5_03.png) no-repeat;
+    width: 250px;
+    height: 226px;
+}
+#product .box4:hover .icon {
+    background-position-x: right;
+}
+#product .box4 .txt p{
+    font-size: 1.8em;
+    line-height: 4em;
+}
+#product .box4 .txt span {
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 400;
+}
