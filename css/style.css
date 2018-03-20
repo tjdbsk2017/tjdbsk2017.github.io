@@ -1,6 +1,10 @@
 @charset "utf-8";
-/* global */
-body {font-family: 'Noto Sans', 'Nanum Gothic', '맑은 고딕', 'malgun gothic', '돋움', dotum, sans-serif; font-size: 13px;}
+
+/* -------------------------- global ---------------------------- */
+body {
+    font-family: 'Noto Sans', 'Nanum Gothic', '맑은 고딕', 'malgun gothic', '돋움', dotum, sans-serif; 
+    font-size: 13px;
+}
 img {
     -webkit-user-select: none; /* Safari 3.1+ */
     -moz-user-select: none; /* Firefox 2+ */
@@ -37,6 +41,12 @@ img {
 .footer{
     height: 230px;
 }
+button{
+    background: none;
+    font-size: 24px;
+    font-family: Corbel;
+    letter-spacing: 2px;
+}
 
 /* description */
 .main .description{
@@ -52,37 +62,39 @@ img {
     font-size: 64px;
     letter-spacing: .1em; 
 }
-.main .description span{
+.main .description>.txt{
+    display: inline;
     font-size: 30px; 
     letter-spacing: .3em;
 }
-.main .description span p{padding-bottom: 20px;}
+.main .description>.txt p{padding-bottom: 20px;}
 /* 
-.main .description span p:nth-child(1){color: #604d8d}
+.main .description>.txt p:nth-child(1){color: #604d8d}
 
-.main .description span p:nth-child(2){color: #8d7db5}
+.main .description>.txt p:nth-child(2){color: #8d7db5}
 
-.main .description span p:nth-child(3){color: #bbafd8}
+.main .description>.txt p:nth-child(3){color: #bbafd8}
  */
-.main .description span p small{
+.main .description>.txt p small{
     font-size: 24px;
     vertical-align: middle; 
     letter-spacing: .1em;
 }
-.main .description span p:nth-child(3) small{font-weight: 700;}
-.main .description span p .grey{color: #d9d9d9;}
-.main .description span p .blue{color: #59c9f5;}
-.main .description span p .yellow{color: #fae100;}
-.main .description span p .orange{color: #f39323;}
-.main .description span p .green{color: #00a388;}
+.main .description>.txt p:nth-child(3) small{font-weight: 700;}
+.main .description>.txt p .grey{color: #d9d9d9;}
+.main .description>.txt p .blue{color: #59c9f5;}
+.main .description>.txt p .yellow{color: #fae100;}
+.main .description>.txt p .orange{color: #f39323;}
+.main .description>.txt p .green{color: #00a388;}
 
-/* event */
-.overlay{
+/* ----------------------- event ------------------------- */
+.main #section3 .original .overlay{
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    top: 30px;
+    left: 50%;
+    margin-left: -550px;
+    height: 700px;
+    width: 1100px;
     background: rgba(0,0,0,0.5);
     z-index: 1;
 }
@@ -93,19 +105,18 @@ img {
     padding: 0px 20px;
 }
 .main #section1 .bx-wrapper 
-.bx-controls .bx-pager .bx-pager-item .bx-pager-link.active{
-    background: #604d8d;
-}
-.main #section4 .tile .bg03:hover button{
-    color: #fff;
-    background-color: #ccc;
-    background: linear-gradient(#aaa, #fff);
-}
-.main #section4 .tile .bg03:hover button a{
-    color: #fff;
-}
+.bx-controls .bx-pager .bx-pager-item .bx-pager-link.active {background: #604d8d;}
 
-/* local */
+.main #section3 .renewal button:hover a {color: #604d8d;}
+.main #section3 .renewal button:hover {background-color: antiquewhite;}
+
+.main #section4 .tile .bg03:hover button{
+    background-color: #ccc;
+    background: linear-gradient(#fae100, #fff);
+}
+.main #section4 .tile .bg03:hover button a {color: #fff;}
+
+/* ----------------------- local ----------------------- */
 
 /* vertical_gnb */
 .vertical_gnb{
@@ -165,7 +176,7 @@ img {
 .main #section1{
     margin-top: 80px;
     overflow: hidden;
-    height: 100vh;
+    max-height: 100vh;
 }
 /* bxslider */
 .main #section1 .bx-wrapper{
@@ -181,14 +192,13 @@ img {
 .bxslider li .tit_wrap{
     position: absolute;
     left: 0px;
-    top: 0;
+    top: 400px;
     width: 100%;
     height: 100%;
     white-space: normal;
 }
 .main #section1 .bx-wrapper 
 .bxslider li .tit_wrap h2{
-    padding-top: 400px;
     text-align: center;
     font-family: 'Nanum Myeongjo', serif;
     font-size: 4em;
@@ -208,7 +218,7 @@ img {
     position: absolute;
     right: 50px;
     top: 50vh;
-    z-index: 10;
+    z-index: 100;
 }
 .main #section1 .bx-wrapper 
 .bx-controls .bx-pager{
@@ -334,17 +344,18 @@ img {
 .main #section2 .skills 
 .tools ul li p{}
 .main #section2 .skills 
-.tools ul li .txt_wrap{}
+.tools>ul>li>.txt_wrap{}
 .main #section2 .skills 
-.tools ul li .txt_wrap .txt{float: left; padding: 10px;}
+.tools>ul>li>.txt_wrap .txt{float: left; padding: 10px;}
 .main #section2 .skills 
-.tools ul li .txt p{}
+.tools>ul>li>.txt p{}
 .main #section2 .skills 
 .tools ul li img{display: inline-block; padding: 20px;}
 .tools ul li img:last-child{width: 140%;}
 
 /* section3 */
 .main #section3{
+    position: relative;
     height: 3530px;
     background-color: #fff;
 }
@@ -353,7 +364,9 @@ img {
     vertical-align: 10%;
 }
 .main #section3 .original{
-    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -361,11 +374,6 @@ img {
 }
 .main #section3 .original .overlay{
     display: none;
-    top: 30px;
-    left: 50%;
-    margin-left: -550px;
-    height: 700px;
-    width: 1100px;
 }
 .main #section3 .original img{
     width: 80%;
@@ -373,11 +381,10 @@ img {
     background-size: 60%;
 }
 .main #section3 .renewal{
-    display: inline-block;
-    overflow: hidden;
     position: absolute;
     right: 0;
     left: 0;
+    top: 1300px;
     margin-top: -45px;
     padding-top: 120px;
     padding-bottom: 30px;
@@ -390,6 +397,15 @@ img {
     width: -90%;
 }
 .main #section3 .renewal img:first-child{margin-right: 0px;}
+.main #section3 .renewal button{
+    position: absolute;
+    left: 300px;
+    bottom: 480px;
+    width: 400px;
+    height: 40px;
+    background-color: #604d8d;
+}
+.main #section3 .renewal button a {color: antiquewhite;}
 
 /* section4_ 2*3 배열 */
 .main #section4{
@@ -429,8 +445,6 @@ img {
     width: 100%;
     height: 100%;
     background-color: #fff;
-    font-size: 24px; 
-    letter-spacing: .1em;
 }
 .main #section4 .tile .bg03 button a{color: #0a0a0a;}
 .main #section4 .tile .bg04{background: url(../images/tile04.jpg) no-repeat left top;}
