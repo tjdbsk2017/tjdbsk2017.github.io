@@ -36,7 +36,6 @@ img {
 .section{
     margin-top: 400px;
     width: 100%;
-    background-color: darkgray;
 }
 .footer{
     height: 230px;
@@ -176,7 +175,7 @@ button{
 .main #section1{
     margin-top: 80px;
     overflow: hidden;
-    max-height: 100vh;
+    height: 900px;
 }
 /* bxslider */
 .main #section1 .bx-wrapper{
@@ -207,11 +206,10 @@ button{
 }
 .main #section1 .bx-wrapper 
 .bxslider li img{
-    height: 100vh;
+    width: 100%;
 }
 .main #section1 .bx-wrapper 
 .bxslider li:nth-child(2) img{
-    width: 100vw;
 }
 .main #section1 .bx-wrapper 
 .bx-controls{
@@ -358,9 +356,11 @@ button{
 
 /* section3 */
 .main #section3{
-    position: relative;
     height: 3530px;
     background-color: #fff;
+}
+.main #section3 .section3_inner{
+    position: relative;
 }
 .main #section3 .description h3 small{
     font-size: 24px; 
@@ -426,17 +426,14 @@ button{
     margin: 10px 10px;
     width: calc(33% - 13px);
     height: calc(50vh - 0px);
-    background-size: 100%
+}
+.main #section4 .tile .comBox4 img{
+    width: 100%;
 }
 .main #section4 .tile .comBox4:nth-child(3n){margin-right: 0;}
-.main #section4 .tile .boxTop{
-}
-.main #section4 .tile .boxBottom{
-    padding: 20px;
-    background-color: #d7cbea;
-}
-.main #section4 .tile .bg01{background: url(../images/tile01.jpg) no-repeat left top;}
-.main #section4 .tile .bg02{background: url(../images/tile02.jpg) no-repeat left top;}
+.main #section4 .tile .boxTop{}
+.main #section4 .tile .boxBottom{}
+
 .main #section4 .tile .bg03{
     position: relative;
     text-align: left;
@@ -450,9 +447,14 @@ button{
     background-color: #fff;
 }
 .main #section4 .tile .bg03 button a{color: #0a0a0a;}
+
+/*
+.main #section4 .tile .bg01{background: url(../images/tile01.jpg) no-repeat left top;}
+.main #section4 .tile .bg02{background: url(../images/tile02.jpg) no-repeat left top;}
 .main #section4 .tile .bg04{background: url(../images/tile04.jpg) no-repeat left top;}
 .main #section4 .tile .bg05{background: url(../images/tile05.jpg) no-repeat left top;}
 .main #section4 .tile .bg06{background: url(../images/tile06.jpg) no-repeat left top;}
+*/
 
 
 .footer{

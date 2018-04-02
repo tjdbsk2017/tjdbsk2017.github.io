@@ -1,0 +1,111 @@
+/*
+
+    1440
+    1024
+    768
+    425
+
+*/
+
+@media all and (max-width: 1440px) {
+    
+  .main #section1 { max-height: 100vh; }
+    
+  .main #section2 .skills .tools ul li:nth-child(2) { margin: 0 118px; }
+    
+    .main #section3 { height: 4000px; }
+    
+  .main #section3 .renewal {
+    top: 1118px;
+    padding-top: 164px;
+  }
+    
+  .main #section3 .renewal button {
+    top: 80px;
+    left: 50%;
+    margin-left: -200px;
+  }
+    
+  .main #section4 { margin-top: 1700px; }
+    
+  .main #section4 .tile .comBox4 { height: calc(50vh - 70px);}
+}
+
+
+@media all and (max-width: 1024px) {
+    
+  .main #section1 .bx-wrapper .bxslider li .tit_wrap{ top: 46%; }
+    
+  .main #section1 .bx-wrapper .bx-controls { top: 40vh; }
+    
+  .main #section2 .profile, .main #section2 .skills{ width: 100%; }
+    
+  .main #section3 .renewal { top: 998px; }
+    
+  .main #section3 .renewal img { width: 100%; }
+    
+  .main #section4 .tile .comBox4 { width: calc(33% - 17px); height: calc(30vh - 10px);}
+    
+}
+
+
+@media all and (max-width: 768px) {
+    
+  .main #section1 .bx-wrapper .bx-controls { top: 30vh; }
+    
+  .main #section1 .bx-wrapper .bxslider li .tit_wrap h2 { font-size: 3.6em; }
+    
+  .main #section2 .skills .tools ul li:nth-child(2) { margin: 0 18px; }
+    
+  .main #section3 .renewal { top: 994px; }
+    
+  .main #section4 { margin-top: 600px; }
+    
+  .main #section4 .tile { height: 350px; }
+    
+  .main #section4 .tile .comBox4 { width: calc(33% - 15px); height: calc(20vh - 10px); }
+    
+  .main #section4 .tile .comBox4 img { width: 100%; }
+
+}
+@media all and (max-width: 425px) {
+    
+    .section { margin-top: inherit; }
+    
+    .main .description h3 { font-size: 3.8em; }
+    .main .description>.txt { font-size: 2em; }
+    .main .description>.txt p small { font-size: .8em; }
+    
+    .vertical_gnb { bottom: 0; left: 0; right: inherit; top: inherit; width: 100%; padding: 0 33px; background-color: #000; }
+    .vertical_gnb .quick>li { transform: rotate(0deg); float: left; margin-bottom: 0; width: 25%; height: 50px; text-align: center; line-height: 50px; }
+    .vertical_gnb .quick>li>a { display: inline-block; padding: 0 10px; letter-spacing: 0; color: #fff; }
+    
+    .main #section1 { height: inherit; }
+    .main #section1 .bx-wrapper .bxslider li .tit_wrap { top: 90px; }
+    .main #section1 .bx-wrapper .bxslider li .tit_wrap h2 { font-size: 2.6em; }
+    .main #section1 .bx-wrapper .bx-controls { display: none; }
+    
+    .main #section2 .profile, .main #section2 .skills { width: 100%; text-align: center; }
+    .main #section2 .skills .education, .tools { }
+    .main #section2 .skills .education ul, .tools ul { padding: 0; }
+    .main #section2 .skills .education ul li { text-align: inherit; width: inherit; margin-bottom: inherit; margin: 80px 0; }
+    .main #section2 .skills .education ul li:last-child { margin-bottom: 80px; }
+    .main #section2 .skills .education ul li img { width: inherit; float: inherit; }
+    .main #section2 .skills .education ul li h4, .main #section2 .skills .education ul li p { padding: 0 ; }
+    
+    .main #section2 .skills .tools ul li { float: inherit; margin: 40px 0; }
+    .main #section2 .skills .tools ul li:nth-child(2) { margin: inherit; }
+    .tools ul li img:last-child { width: inherit; }
+    .main #section2 .skills .tools>ul>li>.txt_wrap { overflow: hidden; }
+    
+    .main #section3 { margin-top: 200px; height: 2700px; }
+    .main #section3 .renewal { top: 908px; }
+    .main #section3 .renewal button { left: 0; margin-left: inherit; width: 100%; }
+    
+    .main #section4 { margin-top: 200px; }
+    .main #section4 .tile { height: 500px; }
+    .main #section4 .tile .comBox4 { width: calc(50% - 20px); height: calc(33% - 10px); }
+    .main #section4 .tile .comBox4:nth-child(3n) { margin-right: 10px; }
+    
+    .footer { margin-top: inherit; }
+}
